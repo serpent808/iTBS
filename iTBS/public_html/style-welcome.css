@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', sans-serif;
+}
+/*Global variables*/
+:root{
+    --mainColor: #bc4504  ;
+    --bodyBgColor: #101010;
+    --boxBgColor: #333333;
+    --headingColor: black;
+    --textColor: rgb(25, 22, 22);
+    --border: 2px solid var(--mainColor);
+    --boxShadow: 0 0 20px #bc4504;
+
+}
+body{
+    background-color: #fff;
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* responsive view*/
+@media only screen and (max-width: 1100px){
+    #MenuBtn{
+        display: block;
+    }
+    header{
+       left: -350px; 
+    }
+}
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: black 0 5px 15px;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    min-height: 550px;
+    
+}
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: #E31E37;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.container button{
+    background-color: #E31E37;
+    color: var(--headingColor);
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin: 15px 0 10px;
+    cursor: pointer;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 40px;
+    height: 100%;
+    
+}
+
+
+

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--main css file -->
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+    <link rel="icon" href="img/logo1.ico" class="icon">
+
+    
+
+    <title> iTBS Student</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <span><img src="img/logo1.ico" width="85" height="85"/>
+                </span>
+                <h1>Create Account</h1>
+                
+                <span>use your Student E-mail for registration</span>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Surname">
+                 <input type="text" placeholder="Student Number">
+                 <input type="email" placeholder="Student E-mail">
+                 <input type="number" placeholder="Phone number">
+                <input type="password" placeholder="Create Password"  minlength="8" pattern=".{8,}" title="Password must be at least 8 characters long">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <span><img src="img/logo1.ico" width="85" height="85"/>
+                </span>
+                <h1>Sign In</h1>
+                
+                
+                 <input type="text" placeholder="Student Number">
+                <input type="password" placeholder="Password" minlength="8" pattern=".{8,}" title="Password must be at least 8 characters long">
+                <a href="#">Forgot your password?</a>
+                
+                <a href="student_portal"> <button>Sign In</button></a>
+                
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to book your next tutoring session</p>
+                    <button class="hidden" id="login">Sign In</button>
+        
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome, Student!</h1>
+                    <p>Register with  your personal details to start booking your next tutoring session</p>
+                    <button class="hidden" id="register">Sign Up</button>
+        
+                </div>
+            </div>
+        </div>
+        
+            </div>
+            <script src='script.js'></script>
+</body>
+
+</html>
